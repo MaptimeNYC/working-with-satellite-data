@@ -8,11 +8,13 @@
   - Frequency
   - Bands
 - Public Vs. Private Data Sources
-- About Landsat Data  
-##  Getting Data  
+- About Landsat Data
+
+## Getting Data  
 - [Google Earth Engine](https://earthengine.google.com/)
 - [USGS Earth Explorer](https://earthexplorer.usgs.gov/)
 - [USGS National Map](https://viewer.nationalmap.gov/basic/?howTo=true)
+
 ##  Analyzing Data
 - Pick a use case
 - Perform an analysis (what tool?)
