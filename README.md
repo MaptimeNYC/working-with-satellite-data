@@ -13,18 +13,18 @@
 - Public Vs. Private Data Sources
 - About Landsat Data
 
+## Getting Data  
+For this tutorial, we will be using the [Google Earth Engine](https://earthengine.google.com/) API to access Landsat datasets.  If you wanted to download satellite datasets for processing and visualization in GIS software, two good sources are [USGS Earth Explorer](https://earthexplorer.usgs.gov/) or [USGS National Map](https://viewer.nationalmap.gov/basic/?howTo=true).  
+
 ## Google Earth Engine  
 - "Earth Engine is a platform for planetary-scale environmental data analysis."
 - JS or Python  
 - "Earth Engine may only be used for development, research, or educational purposes."  
 
-
-## Getting Data  
-For this tutorial, we will be using the [Google Earth Engine](https://earthengine.google.com/) API to access Landsat datasets.  If you wanted to download satellite datasets for processing and visualization in GIS software, two good sources are [USGS Earth Explorer](https://earthexplorer.usgs.gov/) or [USGS National Map](https://viewer.nationalmap.gov/basic/?howTo=true).
-
 ## Using Landsat8's Thermal-Infrared (TIR) Sensors  
 `Map.addLayer(ee.Image(''));
-Map.setCenter(-73.953030, 41.267287);`
+Map.setCenter(-73.953030, 41.267287);`  
+
 ## Using Landsat8 For Vegetation Analysis Over Time  
 
 ##  Resources / Tutorials  
