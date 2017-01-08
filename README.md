@@ -16,7 +16,7 @@
 
 |            NASA           |             USGS          |
 |:-------------------------:|:-------------------------:|
-|![](./assets/NASA_logo.svg)|![](./assets/USGS_logo.svg)|
+|![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/NASA_Worm_logo.svg/500px-NASA_Worm_logo.svg.png)|![](https://upload.wikimedia.org/wikipedia/commons/1/1c/USGS_logo_green.svg)|
 
 
 ## Getting Data  
