@@ -3,6 +3,7 @@
 ##  What You'll Need
   1.  A Google Account
   2.  Sign Up as Google Earth Engine Developer  
+  ![](./assets/EarthEngineSignUp.png)
 
 ##  About Satellite Data
 - Brief History of Satellites
@@ -11,7 +12,12 @@
   - Frequency
   - Bands
 - Public Vs. Private Data Sources
-- About Landsat Data
+- About Landsat Data  
+
+|            NASA           |             USGS          |
+|:-------------------------:|:-------------------------:|
+|![](./assets/NASA_logo.svg)|![](./assets/USGS_logo.svg)|
+
 
 ## Getting Data  
 For this tutorial, we will be using the [Google Earth Engine](https://earthengine.google.com/) API to access Landsat datasets.  If you wanted to download satellite datasets for processing and visualization in GIS software, two good sources are [USGS Earth Explorer](https://earthexplorer.usgs.gov/) or [USGS National Map](https://viewer.nationalmap.gov/basic/?howTo=true).  
@@ -24,6 +30,7 @@ For this tutorial, we will be using the [Google Earth Engine](https://earthengin
 ## Using Landsat8's Thermal-Infrared (TIR) Sensors  
 `Map.addLayer(ee.Image(''));
 Map.setCenter(-73.953030, 41.267287);`  
+
 
 ## Using Landsat8 For Vegetation Analysis Over Time  
 
