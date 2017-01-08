@@ -1,6 +1,9 @@
 # Data Folder #
 data/
 
+# Local Notes #
+*.idea
+
 # Compiled source #
 ###################
 *.com
