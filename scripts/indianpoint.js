@@ -12,9 +12,13 @@ print(ip_coll);
 */
 
 // Filter image collection to Indian Point using WRS Path/Row
-var ip_coll = ee.ImageCollection('LANDSAT/LC8_L1T')
+var ip_image = ee.ImageCollection('LANDSAT/LC8_L1T')
   .filter(ee.Filter.eq('WRS_PATH', 13))
   .filter(ee.Filter.eq('WRS_ROW', 31));
-print(ip_coll);
+print(ip_image);
 
-Map.addLayer(ip_coll);
+// Print metadata
+var ip_properties = ip_image.propertyNames();
+print('Metadata properties: ', ip_properties);
+
+Map.addLayer(ip_image);
