@@ -17,8 +17,9 @@ var ip_image = ee.ImageCollection('LANDSAT/LC8_L1T')
   .filter(ee.Filter.eq('WRS_ROW', 31));
 print(ip_image);
 
-// Print metadata
+// Print list of metadata properties
 var ip_properties = ip_image.propertyNames();
 print('Metadata properties: ', ip_properties);
 
 Map.addLayer(ip_image);
+Map.setCenter(-73.9513992,41.267997);
