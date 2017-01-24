@@ -3,15 +3,9 @@
 // Add Landsat8 image collection
 var LC8_coll = ee.ImageCollection('LANDSAT/LC8_L1T_TOA');
 
-/*
-// One way to filter by location
-// Filter image collection to Indian Point using point
-// Results in multiple scenes, so see method #2 below
+// Set Indian Point lat/long as a point and then a feature
 var ip_point = ee.Geometry.Point(-73.9513992,41.267997);
-var ip_image = ee.ImageCollection('LANDSAT/LC8_L1T_TOA')
-  .filterBounds(ip_point);
-print(ip_image);
-*/
+var ip_feat = ee.Feature(ip_point)
 
 // Filter image collection to Indian Point using WRS Path/Row
 // Use NASA's Earth Explorer to find path/row for each LANDSAT scene
@@ -32,3 +26,6 @@ var medianSpring16 = spring2016.median();
 Map.setCenter(-73.9513992,41.267997,9);
 Map.addLayer(medianSpring16,
   {bands: ['B4', 'B3', 'B2'], max: 0.3}, 'medianSpring16');
+
+// Add marker for Indian Point
+Map.addLayer(ip_feat, {}, 'point');
