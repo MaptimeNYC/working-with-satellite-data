@@ -7,5 +7,6 @@
 ## Tutorial
 You can find the slides for this Maptime [here](https://maptimenyc.github.io/working-with-satellite-data).
 
-## Google Earth Engine script from the slides
+## Script
+This link will open the script from the presentation in the Google Earth Engine Code Editor.
 https://code.earthengine.google.com/f1llm31nl4t3r
