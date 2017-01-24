@@ -12,6 +12,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
     filter: opacity(0.6);
   }
 
+.legible {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+.black-text {
+  color: black;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
