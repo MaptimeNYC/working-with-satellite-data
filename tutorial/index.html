@@ -163,13 +163,28 @@
 							<li>Once you have an account, all the code that follows is meant to be entered in the Earth Engine Code Editor <img src="./assets/EE-Code-Editor.png" alt="Sweet Code Editor Screenshot!"></li>
 						</ul>
 					</section>
-					<!-- Finding Datasets -->
+					<!-- Find & Add Data to Map -->
 					<section>
-						<pre><code>
+						<h2>Adding Data</h2>
+						<p class="fragment">Use <a href="https://earthengine.google.com/datasets/">this</a> Google data catalog to browse available datasets</p>
+						<p class="fragment">In EE code editor, add the dataset to the map document:</p>
+						<pre><code class="fragment" data-trim data-noescape>
+							/* 1.  Add satellite data to map  */
+							Map.addLayer(
+							  //  add collection of raw Landsat8 data
+							  ee.ImageCollection('LANDSAT/LC8_L1T')
+							);
 						</code></pre>
 					</section>
-					<!-- Adding Datasets to Map-->
-					<section></section>
+					<!-- Zoom to location-->
+					<section>
+						<h2>Zoom to Location</h2>
+						<p class="fragment">(below previous code in EE code editor)</p>
+						<pre><code class="fragment" data-trim data-noescape>
+							/* 2.  Center map on Indian Point (longitude, latitude, zoom) */
+							Map.setCenter(-73.954661, 41.269739, 15);
+						</code></pre>
+					</section>
 
 					<section></section>
 				</section>
