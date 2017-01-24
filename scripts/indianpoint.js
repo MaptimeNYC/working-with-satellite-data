@@ -24,5 +24,6 @@ var spring2016 = ip_image.filterDate('2016-03-01', '2016-06-01');
 
 // Compute a median image and display
 var medianSpring16 = spring2016.median();
-Map.setCenter(-73.9513992,41.267997);
-Map.addLayer(medianSpring16);
+Map.setCenter(-73.9513992,41.267997,);
+Map.addLayer(medianSpring16,
+  {bands: ['B4', 'B3', 'B2'], max: 0.3}, 'medianSpring16');
