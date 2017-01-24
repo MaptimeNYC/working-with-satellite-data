@@ -1,3 +1,5 @@
+// This script takes the Indian Point scene and looks for thermal hotspots
+
 // Add Landsat8 image collection
 var LC8_coll = ee.ImageCollection('LANDSAT/LC8_L1T_TOA');
 

@@ -5,7 +5,7 @@ var LC8_coll = ee.ImageCollection('LANDSAT/LC8_L1T_TOA');
 
 // Set Indian Point lat/long as a point and then a feature
 var ip_point = ee.Geometry.Point(-73.9513992,41.267997);
-var ip_feat = ee.Feature(ip_point)
+var ip_feat = ee.Feature(ip_point);
 
 // Filter image collection to Indian Point using WRS Path/Row
 // Use NASA's Earth Explorer to find path/row for each LANDSAT scene
