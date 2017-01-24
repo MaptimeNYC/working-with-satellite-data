@@ -186,9 +186,50 @@
 							Map.setCenter(-73.954661, 41.269739, 15);
 						</code></pre>
 					</section>
+					<!-- Filtering Data-->
+					<section>
+						<h2>Filter Datasets</h2>
+						<pre><code class="fragment" data-trim data-noescape>
+							/*  Filter by a vector(!!!) geometry */
+							var indianPoint = ee.Geometry.Point(-73.954661, 41.269739);
 
-					<section></section>
+							var filteredCollection = ee.ImageCollection('LANDSAT/LC8_L1T')
+							  .filterBounds(indianPoint);
+
+							Map.addLayer(filteredCollection);
+						</code></pre>
+					</section>
+					<!-- Filter by time -->
+					<section>
+						<h2>Filter Datasets <em>By Time</em></h2>
+						<pre><code data-trim data-noescape>
+							/*  Filter by a vector(!!!) geometry */
+							var indianPoint = ee.Geometry.Point(-73.954661, 41.269739);
+
+							var filteredCollection = ee.ImageCollection('LANDSAT/LC8_L1T')
+								.filterBounds(indianPoint)
+								<mark>.filterDate('1990-01-01', '1990-05-31');</mark>
+
+							Map.addLayer(filteredCollection);
+						</code></pre>
+					</section>
+					<!-- Visualize -->
+					<section>
+						<h2>Visualizing Vegetation</h2>
+						<p class="fragment">By combining different bands of Landsat data, you can visualize the otherwise non-visible data</p>
+						<p class="fragment">See <a href="http://www.harrisgeospatial.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx">here</a> for examples of band combinations</p>
+						<pre><code class="fragment" data-trim data-noescape>
+							/*  Add band visualizing 5-4-3 (infrared) */
+							Map.addLayer(
+								ee.ImageCollection('LANDSAT/LC8_L1T'),
+								<mark class="fragment">{'min': 6000, 'max': 18000, 'bands': ['B5', 'B4', 'B3']});</mark>
+						</code></pre>
+					</section>
+					<section data-background-image="./assets/5-4-3.png">
+						<h2 class='legible'>BEAUTIFUL 5-4-3 Image!</h2>
+					</section>
 				</section>
+
 				<!-- ADDITIONAL RESOURCES -->
 				<section data-markdown>
 					<script type="text/template">
