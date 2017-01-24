@@ -24,8 +24,97 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<!-- TITLE SLIDE -->
+				<section data-background="./assets/cover-slide.png" data-state="dim">
+					<h2>New Year's Resolutions:</h2>
+					<h2>Working w/Satellite Data</h2>
+					<h6>January 24th, 2017</h6>
+				</section>
+
+				<!-- GEOGRAPHIC DATA 101 -->
+				<section>
+					<h2>Geographic Data 101</h2>
+					<h4>2 Types:</h4>
+					<ol>
+						<li>Vector</li>
+						<li>Raster</li>
+					</ol>
+				</section>
+
+				<!-- VECTOR DATA VERTICAL SLIDES -->
+				<section>
+					<!-- Vector Definition-->
+					<section>
+						<h2>Vector</h2>
+						<block>
+							Vector represents real-world objects (buildings, rivers, streets, GPS points). Geometries are defined by the vertices that make <em>points, lines, & polygons</em>.
+						</block>
+					</section>
+					<!-- Vector Formats-->
+					<section>
+						<h2>Common Vector Data Formats</h2>
+						<ul>
+							<li>GeoJSON</li>
+							<li>Shapefile</li>
+						</ul>
+					</section>
+						<!-- Vector Example-->
+					<section data-background-image="./assets/osm-data.png" data-state="dim">
+							<h2>Vector Example</h2>
+					</section>
+				</section>
+
+				<!-- RASTER DATA VERTICAL SLIDES -->
+				<section>
+					<!-- Raster Definition -->
+					<section>
+						<h2>Raster</h2>
+						<block>
+							Raster data is represented by rows and columns of cells (or pixels).  Each cell holds a value (temperature, elevation, red/green/blue color).  The <em>resolution</em> of the dataset indicates how much land each cell represents.  For example, a 10 meter resolution would mean that each cell is 10m by 10m and represents 100 square meters of the Earth.
+						</block>
+					</section>
+					<!-- Raster Formats -->
+					<section>
+						<h2>Common Raster Data Formats</h2>
+						<ul>
+							<li>GeoTiff</li>
+							<li>...?</li>
+						</ul>
+					</section>
+					<!-- Raster Examples -->
+					<section data-background-image="./assets/dem-us.jpg" data-state="dim">
+						<h2>Digital Elevation Model</h2>
+					</section>
+					<section data-background-image="./assets/annual_average_temperature_map.png" data-state="dim">
+						<h2>Temperature Data</h2>
+					</section>
+					<!-- Questions? -->
+					<section data-background-image="./assets/any-questions.gif"></section>
+				</section>
+				<!-- LANDSAT DATA VERTICAL SLIDES-->
+				<section>
+					<!-- Introduction to Landsat -->
+					<section>
+						<h2>Landsat Mission</h2>
+
+					</section>
+					<!-- Call to protect Landsat -->
+					<section data-background-image="./assets/Guardian_nasa.png"></section>
+					<!-- Landsat Bands -->
+					<section> <iframe width="800" height="500" src="https://www.youtube.com/embed/YP0et8l_bvY" frameborder="0" allowfullscreen></iframe> </section>
+				</section>
+				<!-- ADDITIONAL RESOURCES -->
+				<section data-markdown>
+					<script type="text/template">
+						##  Resources / Tutorials
+						- [Satellite Summit](http://landscape.satsummit.io/#)
+						- [Google Earth Engine API Tutorials](https://developers.google.com/earth-engine/tutorials)
+						- [Landsat8 and Photoshop - Tom Patterson](http://www.shadedrelief.com/landsat8/introduction.html)
+						- [Creating Web Map Shaded Relief - Tom Patterson](http://www.shadedrelief.com/web_relief/)
+						- [QGIS - Working with Raster Data](https://docs.qgis.org/2.6/en/docs/training_manual/rasters/data_manipulation.html)
+					</script>
+				</section>
 			</div>
 		</div>
 
